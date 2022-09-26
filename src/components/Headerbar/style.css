@@ -1,0 +1,50 @@
+
+
+.headerbar
+{
+display: flex;
+height: 85px;
+width: 1450px;
+left: 0px;
+top: 0px;
+border-radius: 0px;
+background: 
+linear-gradient(0deg, #F4F4F4, #F4F4F4);
+border: 1px solid rgba(94, 91, 91, 1)
+}
+
+.box
+{
+display: flex;
+height: 48px;
+width: 188px;
+padding-left: 38px;
+padding-top: 18px;
+border-radius: nullpx;
+}
+
+
+ .task   {
+    display: flex;
+font-family: Kaushan Script;
+font-size: 33px;
+font-weight: 400;
+line-height: 48px;
+letter-spacing: 0em;
+text-align: left;
+color : rgba(0, 0, 0, 1)
+}
+
+.manager
+{
+   color:  rgba(108, 99, 255, 1);
+}
+.image1
+{
+    height: 55px;
+    width: 55px;
+    margin-left:1140px;
+    
+    border-radius: 0px;
+    
+}
