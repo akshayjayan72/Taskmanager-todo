@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react'
 import './style.css'
 import Todolist from '../Todolist/Todolist';
+import NoTask from './Notask'
 
 function Todoform() {
 
@@ -75,15 +76,10 @@ const handleInput = (e) => setTodo(e.target.value);
             deleteTask={deleteTask}
             />)}
 
-            {/* <div className='snow+hooray'>
-              <div className='snow'>
-                  <img src={require('../../assets/images/snow.jpg')} alt="games"/>
-              </div>
+          {list.length === 0 && <NoTask/>}    
 
-              <div className='hooray'>
-              <p>Hooray, Time to chill ! No tasks.</p>
-              </div>
-            </div> */}
+
+            
         {/* </div>   */}
         
       
