@@ -1,0 +1,49 @@
+/* 
+.mytask
+{
+    display: flex;
+    align-items: center;
+width: 132px;
+height: 27px;
+left: 341px;
+top: 294px;
+position: absolute;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 23px;
+line-height: 27px;
+color: #000000;}
+
+.alltodos{
+list-style: none;
+
+width: 477px;
+height: 351px;
+
+}
+.singletodo
+{
+    display: flex;
+    align-items: center;
+width: 759px;
+height: 56px;
+
+border-width: 1px 0px;
+border-style: solid;
+border-color: black;
+background-color: rgb(116, 115, 115);
+position: absolute;
+list-style: none;
+
+}
+
+.todotext
+{
+
+flex: 1;
+flex-direction: column;
+align-items: center;
+}  */
+
+
