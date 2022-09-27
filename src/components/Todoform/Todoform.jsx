@@ -3,21 +3,35 @@
 import React, { useEffect, useState } from 'react'
 import './style.css'
 import Todolist from '../Todolist/Todolist';
-import NoTask from './Notask'
+import NoTask from './Notask';
+import Toast from './Toast';
 
 function Todoform() {
 
   const [todo,setTodo] = useState("");
   const [list,setList] = useState([]);
+  const [toast,setToast] = useState(false);
 
 //obtaining the value from the input field
 const handleInput = (e) => setTodo(e.target.value);
   
 
-  //deleting on clicking task 
+//toast function on delete
+const  handlesetToast = ()=>
+{
+  setToast(true);
+
+  setTimeout(()=>{
+    setToast(false)
+  },4000) 
+}
+
+
+//deleting on clicking task 
     function deleteTask(clkobj) {
     const updatedarray = list.filter((obj)=>obj.id !== clkobj.id);
     setList(updatedarray);
+    handlesetToast();
  }
 
 
@@ -33,18 +47,10 @@ const handleInput = (e) => setTodo(e.target.value);
     
   };
 
-  // logging the array for reference
-  useEffect(() => {
-    if (list.length) {
-        console.log("changing");
-        console.log(list);
-    }
-}, [list]);
-
   //listening for enter-key press and calling the handlesubmit function
   useEffect(() => {
     const listener = (event) => {
-        if (event.code === "Enter" || event.code === "NumpadEnter") {
+        if (event.code === "Enter") {
             event.preventDefault();
             receiveInput ();
         }
@@ -70,15 +76,16 @@ const handleInput = (e) => setTodo(e.target.value);
               onChange={handleInput}/> 
           {/* </div> */}
 
-          {list.length > 0 && (
+          {list.length > 0 ?(
             <Todolist 
             list={list}
             deleteTask={deleteTask}
-            />)}
+            />) : null}
 
-          {list.length === 0 && <NoTask/>}    
+          {list.length === 0 ? <NoTask/> : null} 
 
-
+           {toast === true ? <Toast/>:null} 
+          
             
         {/* </div>   */}
         
