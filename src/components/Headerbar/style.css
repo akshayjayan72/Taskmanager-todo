@@ -1,4 +1,4 @@
-/* 
+
 
 .headerbar
 {
@@ -13,23 +13,22 @@ linear-gradient(0deg, #F4F4F4, #F4F4F4);
 border: 1px solid rgba(94, 91, 91, 1)
 }
 
-.box
+.box 
 {
 display: flex;
+
 height: 48px;
-width: 188px;
-padding-left: 38px;
+width: 1290px;
+padding-left: 40px;
 padding-top: 18px;
-border-radius: nullpx;
+
 }
 
-
  .task   {
-    display: flex;
+display: flex;
 font-family: Kaushan Script;
 font-size: 33px;
-font-weight: 400;
-line-height: 48px;
+
 letter-spacing: 0em;
 text-align: left;
 color : rgba(0, 0, 0, 1)
@@ -39,12 +38,10 @@ color : rgba(0, 0, 0, 1)
 {
    color:  rgba(108, 99, 255, 1);
 }
-.image1
+ .headlogo
 {
-    height: 55px;
-    width: 55px;
-    margin-left:1140px;
-    
-    border-radius: 0px;
-    
-} */
+display: flex;
+align-items: center;
+margin-left: 1070px;   
+}
+/* @media only screen and (min-device-width: 768px) */

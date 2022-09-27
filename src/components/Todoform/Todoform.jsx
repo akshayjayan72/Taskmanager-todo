@@ -5,6 +5,7 @@ import './style.css'
 import Todolist from '../Todolist/Todolist';
 import NoTask from './Notask';
 import Toast from './Toast';
+//import Headerbar from '../Headerbar/Headerbar';
 
 function Todoform() {
 
@@ -68,6 +69,8 @@ const  handlesetToast = ()=>
       <form className='form' onSubmit={receiveInput}>
         {/* <div className='b+s+h'>
           <div className='box'> */}
+           
+
         <input 
               type = "text" 
               placeholder='   Add new task' 
@@ -81,6 +84,8 @@ const  handlesetToast = ()=>
             list={list}
             deleteTask={deleteTask}
             />) : null}
+
+            
 
           {list.length === 0 ? <NoTask/> : null} 
 

@@ -1,4 +1,4 @@
-/* body
+body
 {
     background: 
     linear-gradient(0deg, #F4F4F4, #F4F4F4);
@@ -24,14 +24,15 @@ border-radius: 6px;
 
 .hooray
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 width: 486px;
 height: 39px;
-margin-left: 477px;
-margin-top: 725px;
-position: absolute;
+
 font-family: Roboto;
 font-style: normal;
-font-weight: 400;
+
 font-size: 33px;
 line-height: 39px;
 
@@ -41,7 +42,8 @@ color: rgba(96, 96, 96, 1);
 .snow
 {
 position: absolute;
-
+justify-content: center;
+align-items: center;
 width: 477px;
 height: 351px;
 margin-left: 486px;
@@ -49,4 +51,4 @@ margin-top: 337px;
 } 
 
 
- */
+
