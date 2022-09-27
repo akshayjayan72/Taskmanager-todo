@@ -13,11 +13,11 @@ function Todoform() {
 const handleInput = (e) => setTodo(e.target.value);
   
 
-  // deleting on clicking task 
-//     function deleteTask(clkobj) {
-//     const updatedarray = list.filter((obj)=>obj.id !== clkobj.id);
-//     setList(updatedarray);
-//  }
+  //deleting on clicking task 
+    function deleteTask(clkobj) {
+    const updatedarray = list.filter((obj)=>obj.id !== clkobj.id);
+    setList(updatedarray);
+ }
 
 
 
@@ -72,7 +72,7 @@ const handleInput = (e) => setTodo(e.target.value);
           {list.length > 0 && (
             <Todolist 
             list={list}
-            //deleteTask={deleteTask}
+            deleteTask={deleteTask}
             />)}
 
             {/* <div className='snow+hooray'>

@@ -1,10 +1,10 @@
 import React from 'react'
 
 function Todoitem(props) {
-  const { obj } = props;
+  const { obj,deleteTask } = props;
   return (
         <div>
-            <p >{obj.name}</p>
+            <p onClick={() => deleteTask(obj)}>{obj.name}</p>
         </div>
   )
 }

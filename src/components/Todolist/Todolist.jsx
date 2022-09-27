@@ -2,7 +2,7 @@ import React from 'react'
 import Todoitem from './Todoitem'
 import '../Todolist/style.css'
 
-function Todolist({list}) {
+function Todolist({list,deleteTask}) {
 
   return (
     <div>
@@ -18,7 +18,7 @@ function Todolist({list}) {
                         return (
                             <Todoitem
                                 key={index}
-                                // deleteTask={deleteTask}
+                                deleteTask={deleteTask}
                                 // item={obj.text}
                                 // id={obj.id}
                                 obj={obj}
