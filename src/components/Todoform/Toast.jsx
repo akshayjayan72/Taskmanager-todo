@@ -2,8 +2,8 @@ import React from 'react'
 
 function Toast() {
   return (
-    <div>
-        <p>Task completed</p>
+    <div className='toast'>
+        <p className='toasttext'>Task completed</p>
     </div>
   )
 }

@@ -5,14 +5,14 @@ import '../Todolist/style.css'
 function Todolist({list,deleteTask}) {
 
   return (
-    <div>
+        <div className='tasklist'>
             {/* Task count */}
-            <div>
-                <p>My Tasks ({list.length});</p>
+            <div className='mytask'>
+                <p>My Tasks ({list.length})</p>
             </div>
 
             {/* Listing out Tasks */}
-            <div>
+            <div className='taskbox'>
                 {list.length > 0 &&
                     list.map((obj, index) => {
                         return (

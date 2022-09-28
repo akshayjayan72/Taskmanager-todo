@@ -8,7 +8,7 @@ import Todoform from "../components/Todoform/Todoform";
 function Home() {
   return (
     <>
-      <Headerbar title=" Taskmanager " />
+      <Headerbar title=" Taskmanager "/>
       <Todoform />
     </>
   );

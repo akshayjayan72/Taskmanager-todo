@@ -39,16 +39,41 @@ line-height: 39px;
 color: rgba(96, 96, 96, 1);
 }
 
-.snow
+.snow1
 {
 position: absolute;
-justify-content: center;
-align-items: center;
 width: 477px;
 height: 351px;
 margin-left: 486px;
-margin-top: 337px;
+top: 337px;
 } 
+.toast
+{
+    position: relative ;
+width: 668px;
+height: 81px;
+left: 386px;
+top: 893px;
+
+background: #6C63FF;
+border-radius: 12px;
 
 
+}
+.toasttext
+{ 
+position: relative;
+font-family: 'Roboto';
+font-style: normal;
+
+font-size: 40px;
+text-align: center;
+top: 20%;
+
+
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
 

@@ -79,7 +79,7 @@ const  handlesetToast = ()=>
               onChange={handleInput}/> 
           {/* </div> */}
 
-          {list.length > 0 ?(
+        {list.length > 0 ? (
             <Todolist 
             list={list}
             deleteTask={deleteTask}
@@ -87,9 +87,9 @@ const  handlesetToast = ()=>
 
             
 
-          {list.length === 0 ? <NoTask/> : null} 
+        {list.length === 0 ? <NoTask/> : null} 
 
-           {toast === true ? <Toast/>:null} 
+        {toast === true ? <Toast/>:null} 
           
             
         {/* </div>   */}
