@@ -1,0 +1,47 @@
+
+
+.headerbar
+{
+display: flex;
+height: 85px;
+width: 1450px;
+left: 0px;
+top: 0px;
+border-radius: 0px;
+background: 
+linear-gradient(0deg, #F4F4F4, #F4F4F4);
+border: 1px solid rgba(94, 91, 91, 1)
+}
+
+.box 
+{
+display: flex;
+
+height: 48px;
+width: 1290px;
+padding-left: 40px;
+padding-top: 18px;
+
+}
+
+ .task   {
+display: flex;
+font-family: Kaushan Script;
+font-size: 33px;
+
+letter-spacing: 0em;
+text-align: left;
+color : rgba(0, 0, 0, 1)
+}
+
+.manager
+{
+   color:  rgba(108, 99, 255, 1);
+}
+ .headlogo
+{
+display: flex;
+align-items: center;
+margin-left: 1070px;   
+}
+/* @media only screen and (min-device-width: 768px) */
